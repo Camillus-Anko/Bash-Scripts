@@ -1,0 +1,17 @@
+#! /usr/bin/env bash
+# We use select followed by the variable we want to store the 
+# selection in and the word in  followed by list of options to
+# select from . After that a do block, encapsulating whatever you
+# want to do with the selection. break to stop, otherwise the loop
+# continues forever
+echo "Which animal"
+
+select animal in "Cat" "dog" "bird" "fish"
+
+do
+
+echo "You selected $animal"
+
+break
+
+done

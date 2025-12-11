@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+for (( ; ; ))
+
+do
+
+echo "Infinite loop [hit CTRL+C to stop]"
+
+done

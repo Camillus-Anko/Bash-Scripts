@@ -1,0 +1,26 @@
+#! /usr/bin/env bash
+
+
+function cleanup()
+{
+
+echo "Received signals and cleanup files"
+
+exit 1
+
+
+}
+
+trap 'cleanup' SIGHUP SIGINT SIGILL
+
+while :
+
+do
+
+echo "Hi there"
+
+sleep 1
+
+done
+
+

@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+# For Loop allows for specification of a list values. A list 
+# of commands is executed for each value in the list. It's based
+# on certain initial conditions
+for VAR in 1 2 3 4 5 a b c d
+
+do
+
+echo "$VAR"
+
+done

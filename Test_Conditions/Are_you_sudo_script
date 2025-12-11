@@ -1,0 +1,14 @@
+#! /usr/bin/env bash
+
+if [ $(id -u) = "0" ]
+
+then
+
+echo "You are superuser"
+
+else
+
+echo "You are not superuser your ID is $(id -u)"
+
+fi
+

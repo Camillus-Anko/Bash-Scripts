@@ -1,0 +1,19 @@
+#! /usr/bin/env bash
+
+count=-1
+
+if [ $count -gt 0 ]; then
+
+echo "Count is positive"
+
+elif [ $count -lt -2 ]
+
+then
+
+echo "Count is less than -2"
+
+else
+
+echo "Count lies between 0 and -1"
+
+fi

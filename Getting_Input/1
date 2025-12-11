@@ -1,0 +1,18 @@
+#! /usr/bin/env bash
+# Scripts often need input as they run
+#  The read keyword allows us to gather input
+# pausing the script until input is provided
+
+echo "What is your name?"
+
+read name
+
+echo "What is your password"
+
+read -s pass
+
+read -p "What is your favorite animal?" animal
+
+echo "name:$name,pass:$pass,animal:$animal"
+
+

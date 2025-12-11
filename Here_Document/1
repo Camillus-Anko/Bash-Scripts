@@ -1,0 +1,21 @@
+#! /usr/bin/env bash
+
+echo "This line would execute"
+
+<< EOF
+
+
+echo "This line would not execute"
+
+echo "This line2 would not execute"
+
+echo "This line3 would not execute"
+
+sleep 2 # sleep wouldn't execute
+
+EOF
+
+echo "This line would again execute"
+
+
+

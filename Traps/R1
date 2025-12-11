@@ -1,0 +1,23 @@
+#! /usr/bin/env bash
+
+cleanup ()
+
+
+{
+echo "Some cleanup performed"
+
+trap - SIGINT
+
+}
+
+trap 'cleanup SIGINT' SIGINT
+
+while :
+
+do
+
+echo "hello"
+
+sleep 1
+
+done

@@ -1,0 +1,32 @@
+#! /usr/bin/env bash
+
+string1="Hi There"
+
+string2=""
+
+# n is true if lenght of string is nonzero
+
+if [ -n "$string1" ]
+
+then
+
+echo "lenght of the string is nonzero"
+
+else
+
+echo "lenght of string is zero"i
+fi
+
+# z is true if string length is zero
+
+if [ -z "$string2" ] 
+
+then
+
+	echo "lenght of string is zero"
+
+else
+
+	echo"lenght of string is nonzero"
+
+fi

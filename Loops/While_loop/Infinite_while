@@ -1,0 +1,16 @@
+#! /usr/bin/env bash
+
+# while [ 1 ] , while true can also be used instaead
+while :
+
+do
+	
+	echo "Hello there"
+	 
+	sleep 1
+	
+
+
+done
+
+# This is an infinite loop bacause the condition is always true

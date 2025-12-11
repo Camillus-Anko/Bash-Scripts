@@ -1,0 +1,11 @@
+While Loop is a control flow statement which allows a code to be 
+executed as long as the given condition is satisfied
+i.e run while condition is true
+
+                        WHILE LOOP STRUCTURE
+            while [condition]
+            do
+                command1
+                command2
+                commandN
+            done

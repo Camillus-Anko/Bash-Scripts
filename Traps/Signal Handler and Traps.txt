@@ -1,0 +1,29 @@
+Signals are a way of communicating between two processes in Linux.
+
+>>> kill -l
+>>> kill -l | more for better navigation
+
+TRAPING SIGNAL i.e Receiving the Signal
+Syntax :
+
+    trap somecommand signal1 signal2 ... signalN
+
+ctrl + C : really is a signal (SIGINT)
+ctrl + Z : Suspends a command and sends to background
+kill -9 (SIGKILL) can't be trapped
+
+* Usually trap is done at the top of the file.
+Whenever you are putting a trap from then onwards the signal becomes
+active. exx: before a loop
+
+Hint: 
+    When doing signal handling always use /bin/bash not /bin/ksh
+they are differents in terms of signal handling 
+
+>>> awk '{print $4}' print 4th column
+
+>>> df ; df | grep tmps | tail -1
+
+>>> ps -ef | grep -i processname
+
+>>> man signal

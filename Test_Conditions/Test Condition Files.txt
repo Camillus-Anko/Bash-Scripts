@@ -1,0 +1,18 @@
+[-a file] file exist
+[-b file] file exists and is a block device
+[-c file] file exists and is a character file 
+[-d file] file exists and is a directory
+[-e file] True if file exist
+[-f file] file exist and is a regular file
+[-h file] file exist and is a symbolic file 
+[-x file] file exist and is executable
+[-r file] file exist and is readable
+[-w file] file exist and is writable
+
+[-z string] True if lenght of string is zero
+[-n string] String exist and is non-zero
+[string = string1] True if the srings are equal
+[sring1 != string2] True if strings are not equal
+
+Exx: cd directory && pwd
+2. cd my_directory || exit

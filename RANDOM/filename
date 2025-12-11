@@ -1,0 +1,163 @@
+total 0
+crw-r--r--  1 root root     10, 235 May 22 14:10 autofs
+drwxr-xr-x  2 root root         140 May 22 14:10 block
+drwxr-xr-x  2 root root          80 May 22 14:10 bsg
+crw-------  1 root root     10, 234 May 22 14:10 btrfs-control
+drwxr-xr-x  3 root root          60 May 22 14:10 bus
+lrwxrwxrwx  1 root root           3 May 22 14:10 cdrom -> sr0
+drwxr-xr-x  2 root root        2980 May 22 15:43 char
+crw-------  1 root root      5,   1 May 22 14:10 console
+lrwxrwxrwx  1 root root          11 May 22 14:10 core -> /proc/kcore
+crw-------  1 root root     10, 126 May 22 14:10 cpu_dma_latency
+crw-------  1 root root     10, 203 May 22 14:10 cuse
+drwxr-xr-x  7 root root         140 May 22 14:10 disk
+crw-rw----+ 1 root audio    14,   9 May 22 14:10 dmmidi
+drwxr-xr-x  3 root root         100 May 22 14:10 dri
+crw-rw----  1 root video    29,   0 May 22 14:10 fb0
+lrwxrwxrwx  1 root root          13 May 22 14:10 fd -> /proc/self/fd
+crw-rw-rw-  1 root root      1,   7 May 22 14:10 full
+crw-rw-rw-  1 root root     10, 229 May 22 14:10 fuse
+crw-------  1 root root    246,   0 May 22 14:10 hidraw0
+crw-------  1 root root     10, 228 May 22 14:10 hpet
+drwxr-xr-x  2 root root           0 May 22 14:10 hugepages
+lrwxrwxrwx  1 root root          12 May 22 14:10 initctl -> /run/initctl
+drwxr-xr-x  4 root root         280 May 22 14:10 input
+crw-r--r--  1 root root      1,  11 May 22 14:10 kmsg
+lrwxrwxrwx  1 root root          28 May 22 14:10 log -> /run/systemd/journal/dev-log
+crw-rw----  1 root disk     10, 237 May 22 14:10 loop-control
+drwxr-xr-x  2 root root          60 May 22 14:10 mapper
+crw-r-----  1 root kmem      1,   1 May 22 14:10 mem
+crw-rw----+ 1 root audio    14,   2 May 22 14:10 midi
+drwxrwxrwt  2 root root          40 May 22 14:10 mqueue
+drwxr-xr-x  2 root root          60 May 22 14:10 net
+crw-rw-rw-  1 root root      1,   3 May 22 14:10 null
+crw-------  1 root root     10, 144 May 22 14:10 nvram
+crw-r-----  1 root kmem      1,   4 May 22 14:10 port
+crw-------  1 root root    108,   0 May 22 14:10 ppp
+crw-------  1 root root     10,   1 May 22 14:10 psaux
+crw-rw-rw-  1 root tty       5,   2 May 22 16:33 ptmx
+drwxr-xr-x  2 root root           0 May 22 14:10 pts
+crw-rw-rw-  1 root root      1,   8 May 22 14:10 random
+crw-rw-r--+ 1 root netdev   10, 242 May 22  2023 rfkill
+lrwxrwxrwx  1 root root           4 May 22 14:10 rtc -> rtc0
+crw-------  1 root root    251,   0 May 22 14:10 rtc0
+brw-rw----  1 root disk      8,   0 May 22 14:10 sda
+brw-rw----  1 root disk      8,   1 May 22 14:10 sda1
+brw-rw----  1 root disk      8,   2 May 22 14:10 sda2
+brw-rw----  1 root disk      8,   5 May 22 14:10 sda5
+crw-rw----+ 1 root cdrom    21,   0 May 22 14:10 sg0
+crw-rw----  1 root disk     21,   1 May 22 14:10 sg1
+drwxrwxrwt  2 root root          40 May 22 14:10 shm
+crw-------  1 root root     10, 231 May 22 14:10 snapshot
+drwxr-xr-x  3 root root         200 May 22 14:10 snd
+brw-rw----+ 1 root cdrom    11,   0 May 22 14:10 sr0
+lrwxrwxrwx  1 root root          15 May 22 14:10 stderr -> /proc/self/fd/2
+lrwxrwxrwx  1 root root          15 May 22 14:10 stdin -> /proc/self/fd/0
+lrwxrwxrwx  1 root root          15 May 22 14:10 stdout -> /proc/self/fd/1
+crw-rw-rw-  1 root tty       5,   0 May 22 14:10 tty
+crw--w----  1 root tty       4,   0 May 22 14:10 tty0
+crw--w----  1 root tty       4,   1 May 22  2023 tty1
+crw--w----  1 root tty       4,  10 May 22 14:10 tty10
+crw--w----  1 root tty       4,  11 May 22 14:10 tty11
+crw--w----  1 root tty       4,  12 May 22 14:10 tty12
+crw--w----  1 root tty       4,  13 May 22 14:10 tty13
+crw--w----  1 root tty       4,  14 May 22 14:10 tty14
+crw--w----  1 root tty       4,  15 May 22 14:10 tty15
+crw--w----  1 root tty       4,  16 May 22 14:10 tty16
+crw--w----  1 root tty       4,  17 May 22 14:10 tty17
+crw--w----  1 root tty       4,  18 May 22 14:10 tty18
+crw--w----  1 root tty       4,  19 May 22 14:10 tty19
+crw--w----  1 root tty       4,   2 May 22 14:10 tty2
+crw--w----  1 root tty       4,  20 May 22 14:10 tty20
+crw--w----  1 root tty       4,  21 May 22 14:10 tty21
+crw--w----  1 root tty       4,  22 May 22 14:10 tty22
+crw--w----  1 root tty       4,  23 May 22 14:10 tty23
+crw--w----  1 root tty       4,  24 May 22 14:10 tty24
+crw--w----  1 root tty       4,  25 May 22 14:10 tty25
+crw--w----  1 root tty       4,  26 May 22 14:10 tty26
+crw--w----  1 root tty       4,  27 May 22 14:10 tty27
+crw--w----  1 root tty       4,  28 May 22 14:10 tty28
+crw--w----  1 root tty       4,  29 May 22 14:10 tty29
+crw--w----  1 root tty       4,   3 May 22 14:10 tty3
+crw--w----  1 root tty       4,  30 May 22 14:10 tty30
+crw--w----  1 root tty       4,  31 May 22 14:10 tty31
+crw--w----  1 root tty       4,  32 May 22 14:10 tty32
+crw--w----  1 root tty       4,  33 May 22 14:10 tty33
+crw--w----  1 root tty       4,  34 May 22 14:10 tty34
+crw--w----  1 root tty       4,  35 May 22 14:10 tty35
+crw--w----  1 root tty       4,  36 May 22 14:10 tty36
+crw--w----  1 root tty       4,  37 May 22 14:10 tty37
+crw--w----  1 root tty       4,  38 May 22 14:10 tty38
+crw--w----  1 root tty       4,  39 May 22 14:10 tty39
+crw--w----  1 root tty       4,   4 May 22 14:10 tty4
+crw--w----  1 root tty       4,  40 May 22 14:10 tty40
+crw--w----  1 root tty       4,  41 May 22 14:10 tty41
+crw--w----  1 root tty       4,  42 May 22 14:10 tty42
+crw--w----  1 root tty       4,  43 May 22 14:10 tty43
+crw--w----  1 root tty       4,  44 May 22 14:10 tty44
+crw--w----  1 root tty       4,  45 May 22 14:10 tty45
+crw--w----  1 root tty       4,  46 May 22 14:10 tty46
+crw--w----  1 root tty       4,  47 May 22 14:10 tty47
+crw--w----  1 root tty       4,  48 May 22 14:10 tty48
+crw--w----  1 root tty       4,  49 May 22 14:10 tty49
+crw--w----  1 root tty       4,   5 May 22 14:10 tty5
+crw--w----  1 root tty       4,  50 May 22 14:10 tty50
+crw--w----  1 root tty       4,  51 May 22 14:10 tty51
+crw--w----  1 root tty       4,  52 May 22 14:10 tty52
+crw--w----  1 root tty       4,  53 May 22 14:10 tty53
+crw--w----  1 root tty       4,  54 May 22 14:10 tty54
+crw--w----  1 root tty       4,  55 May 22 14:10 tty55
+crw--w----  1 root tty       4,  56 May 22 14:10 tty56
+crw--w----  1 root tty       4,  57 May 22 14:10 tty57
+crw--w----  1 root tty       4,  58 May 22 14:10 tty58
+crw--w----  1 root tty       4,  59 May 22 14:10 tty59
+crw--w----  1 root tty       4,   6 May 22 14:10 tty6
+crw--w----  1 root tty       4,  60 May 22 14:10 tty60
+crw--w----  1 root tty       4,  61 May 22 14:10 tty61
+crw--w----  1 root tty       4,  62 May 22 14:10 tty62
+crw--w----  1 root tty       4,  63 May 22 14:10 tty63
+crw--w----  1 root tty       4,   7 May 22  2023 tty7
+crw--w----  1 root tty       4,   8 May 22 15:31 tty8
+crw--w----  1 root tty       4,   9 May 22 14:10 tty9
+crw-rw----  1 root dialout   4,  64 May 22 14:10 ttyS0
+crw-rw----  1 root dialout   4,  65 May 22 14:10 ttyS1
+crw-rw----  1 root dialout   4,  66 May 22 14:10 ttyS2
+crw-rw----  1 root dialout   4,  67 May 22 14:10 ttyS3
+crw-------  1 root root     10, 239 May 22 14:10 uhid
+crw-------  1 root root     10, 223 May 22 14:10 uinput
+crw-rw-rw-  1 root root      1,   9 May 22 14:10 urandom
+crw-rw----  1 root tty       7,   0 May 22 14:10 vcs
+crw-rw----  1 root tty       7,   1 May 22 14:10 vcs1
+crw-rw----  1 root tty       7,   2 May 22 14:10 vcs2
+crw-rw----  1 root tty       7,   3 May 22 14:10 vcs3
+crw-rw----  1 root tty       7,   4 May 22 14:10 vcs4
+crw-rw----  1 root tty       7,   5 May 22 14:10 vcs5
+crw-rw----  1 root tty       7,   6 May 22 14:10 vcs6
+crw-rw----  1 root tty       7,   7 May 22  2023 vcs7
+crw-rw----  1 root tty       7,   8 May 22 15:31 vcs8
+crw-rw----  1 root tty       7, 128 May 22 14:10 vcsa
+crw-rw----  1 root tty       7, 129 May 22 14:10 vcsa1
+crw-rw----  1 root tty       7, 130 May 22 14:10 vcsa2
+crw-rw----  1 root tty       7, 131 May 22 14:10 vcsa3
+crw-rw----  1 root tty       7, 132 May 22 14:10 vcsa4
+crw-rw----  1 root tty       7, 133 May 22 14:10 vcsa5
+crw-rw----  1 root tty       7, 134 May 22 14:10 vcsa6
+crw-rw----  1 root tty       7, 135 May 22  2023 vcsa7
+crw-rw----  1 root tty       7, 136 May 22 15:31 vcsa8
+crw-rw----  1 root tty       7,  64 May 22 14:10 vcsu
+crw-rw----  1 root tty       7,  65 May 22 14:10 vcsu1
+crw-rw----  1 root tty       7,  66 May 22 14:10 vcsu2
+crw-rw----  1 root tty       7,  67 May 22 14:10 vcsu3
+crw-rw----  1 root tty       7,  68 May 22 14:10 vcsu4
+crw-rw----  1 root tty       7,  69 May 22 14:10 vcsu5
+crw-rw----  1 root tty       7,  70 May 22 14:10 vcsu6
+crw-rw----  1 root tty       7,  71 May 22  2023 vcsu7
+crw-rw----  1 root tty       7,  72 May 22 15:31 vcsu8
+drwxr-xr-x  2 root root          60 May 22 14:10 vfio
+crw-------  1 root root     10, 127 May 22 14:10 vga_arbiter
+crw-------  1 root root     10, 137 May 22 14:10 vhci
+crw-rw----  1 root kvm      10, 238 May 22 14:10 vhost-net
+crw-rw----  1 root kvm      10, 241 May 22 14:10 vhost-vsock
+crw-------  1 root root     10, 125 May 22 14:10 vmci
+crw-rw-rw-  1 root root     10, 124 May 22 14:10 vsock
+crw-rw-rw-  1 root root      1,   5 May 22 14:10 zero
