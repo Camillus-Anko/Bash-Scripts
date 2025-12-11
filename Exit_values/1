@@ -1,0 +1,26 @@
+#! /usr/bin/env bash
+
+ls -l ./abc.txt
+
+if [ $? -ne 0 ]
+
+then
+
+exit 4
+
+fi
+
+./exit.sh
+
+if [ $? -ne 0 ]
+
+then
+
+exit 5
+
+fi
+
+echo "This is a normal termination"
+
+
+exit 0

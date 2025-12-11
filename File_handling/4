@@ -1,0 +1,27 @@
+#! /usr/bin/env bash
+
+myFile="filename.txt"
+
+counter=0
+
+cat $myFile | while read LINE
+
+do
+
+echo $LINE
+
+counter=$((counter+1))
+
+echo $counter
+done
+
+echo "File $myFile has $counter lines"
+
+ 
+
+#  We can add echo $counter to see the value of counter for each
+# iteration. But it reads zero instead of 19. 
+# REASON : Whenever a command is piped to a command a shell is born
+# causing the variable to reset. Making script run into two shells
+
+# GOTO FILE 5 FOR A FIX

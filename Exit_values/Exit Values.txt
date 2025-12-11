@@ -1,0 +1,14 @@
+Exit Values are a Value which is written by a shell script or a 
+executable which could be a binary i.e notification to the system
+whether it's been executed properly or not
+
+>>> echo $? : Command is used to know the exit status of immediate
+past command (exit status)
+
+0 - Indicates success
+
+Anything apart from 0 is failure
+
+Exit values shoud not be negative 
+Exit values range from 0 - 255
+The value of the failure code depends on the nature of the error

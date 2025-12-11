@@ -1,0 +1,4 @@
+One of the basic operations in any programming language, where
+you need to have the capability to open a file and probaly read line
+by line, and doing some passing with respect to splitting it into
+words, counting etc

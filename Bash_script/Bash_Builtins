@@ -1,0 +1,155 @@
+ bash --version
+echo $SHELL
+
+# echo outputs text, echo ends the line with a newline character
+echo some text
+# printf is also a shell builtin
+printf "Some text"
+# Bash lets us specify whether to use a command or a builtin, which we might some times want to do if the command version of a program offers features we need,that the builtin version doesn't.
+command echo Hello ; builtin echo Hello
+# To check wether a command is a Builtin or Commad use:		Builtins take precedence over commands.
+command -V echo ; command -V df
+# Specific Builtins can be disabled in a session with: enable -n and the name of the builtin. This allows the command version to run instaead  enable -n shows the Builtins that are disabled
+enable -n echo ; enable echo
+# There is a builtin called help that shows supporting information about builtins exx: help echo shows information about builtins.
+help; help echo
+
+
+# Tilde Expansion (~) : Tilde expansion represents the users $HOME environment variable. echo ~ Displays your home directory, echo ~- shows the directory you were just in if you've worked with other Directories
+echo ~ ; echo ~-
+
+# Brace Exapnasion {a,b,c} {x..y..i}: Brace expansioon create sets or ranges
+echo {1..10} ; echo {10..1} ; echo {01..100} ; echo {a..z} echo {Z..A} ; echo {1..30..2} ; echo {a..z..2} ; echo {cat,Dog,Fox} ; echo {Cat,Dog,Fox}_{1..5}
+
+
+# Parameter Expansion ${..}: Parameter expansion retrieves and transform stored values
+
+a="Hello world"; echo $a
+greeting="Hello there" ; echo ${greeting} ; echo ${greeting:6} ;echo ${greeting:6:3}; echo ${greeting/there/everybody} ; echo ${greeting//e/_} ; echo ${greeting/e/_}
+
+# Command Substitution $(..): Command substitution puts the output of one command inside  another
+echo the version of the kernel is  $(uname -r) 
+
+# Arithmetic Expansion $((..)): Arithmetic expansion does math. Bash only deals with integers
+echo $((2+3)) ; echo $((3*4))
+
+# Escaping a character
+echo The \(Kernel\) is $(uname -r)
+# Single Quotes/strong quotes: 'Everything in the quotes must be treated as a literal text'
+
+# Double Quotes: Bash still interprets substitutions,expansions,variables and evaluations
+# Turns off the newline
+
+echo -n "No newline" 
+
+# VARIABLES
+camillus="I miss you Elizabeth"
+jnr=100
+
+echo $camillus
+echo $jnr
+declare -r alexandre="Osteen"
+echo "the name of my Pastor is:$alexandre"
+# declare -r variable name: makes variable readonly,can't be changed after it has been declared
+declare -l lowerstring="SATAN"
+# declare -l variable name : changes upper case text to lowercase text
+declare -u upperstring="jesus"
+# declare -u variable name : changes lowercase text to uppercase text
+
+declare -p: Shows all variables set
+declare -i: sets an integer variable
+env : Shows all environment variable
+
+# Working with numbers.
+1. Arithmetic expansion $((..)): Returns the results of mathematical operation
+2. Arithmetic evaluation (()): performs calculations and changes the value of the value of variables
+
+a=3 ; ((a+=3)); echo $a ; ((a++);echo $a ; ((a--)) ; echo $a
+
+3. echo $RANDOM : Random returns a pseudo integer between zero and 32,767
+
+
+# Comparing Values with Test [..]
+
+help test command to view more options for test.
+
+Lets see if my home directory is a directory: [ -d ~ ] ; echo $? ; [ -d /bin/bash ] ; echo $? ; [-d /bin ]; echo $?
+When we run a comparison or test the results we get back is an exit or return status ( 1 or 0]
+
+0 - For Success , 1 - Failure
+$? is used to read the value of the return status
+
+Test can be used to compare Strings
+[ "Camillus"="camillus"]; echo $?; [ "cat"="Dog" ]; echo $?
+
+# Arithmetic Tests
+-eq : Equal to
+-ne : Not equal to
+-lt : Less than
+-le : Less than or equal to
+-gt : Greater than
+-ge : Greater than or equal to  NB: Its better to leave space between arithmetic test
+[ 4 -lt 5 ] ; echo $?; [ 10 -gt 50 ] echo $?
+[ ! 4 -lt 3 ] This give the opposite results of the true outcome
+
+# Extended Test [[..]]
+Extended test support comparisons that test runs and adds additional features,with extended test we can use more than one expression within a test to create more complex logic.
+[[ -d ~ && -a /bin/bash ]]; echo $?
+[[ -d ~ || -a /bin/mash ]]; echo $?
+[[ -d ~ ]] && echo ~ is a directory
+ls && listed the directory
+true && echo "success"
+false && echo "success"
+[[ "cat"=~ c.* ]]; echo $?
+[[ "bat"=~ c.* ]]; echo $?
+
+
+# echo -e : Interprets escape characters like \t (tab),\n (newline), \a (the bell)
+
+echo -e "Name\t\tNumber";echo -e "Scott\t\t123"
+echo -e "This text\nbreaks over\nthreeline"
+
+
+#Control Structures
+ Control structures allows us to control how script execution happens.
+1. If statement: If statements execute code based on a conditional expression
+	if ...
+	then
+	...
+	else,elif ( only if needed )
+	...
+	fi ( end if )
+# Loops in bash
+Loops run a piece of code repeatedly
+1. While Loops run  while condition is true.
+2. Until Loops run until a condition is true.
+
+# While Loops
+	while..
+	do	
+	...
+	done
+
+# Until Loops
+	until ...
+	do
+	...
+	done
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+#! /usr/bin/env bash
+myvar="Hello"
+echo "The value of the myvar variable is:$myvar"
+myvar="Bonjour"
+echo "The value of the myvar variable is:$myvar"
+declare -r  myname="Camillus"
+ echo "The value of the myname variable is:$myname"
+
+# The variable myname was not changed since it has been set to read only.
+myname="Zita"
+echo "The value of the myname variable is:$myname"
+# Changes text to lowercase
+declare -l lowerstring="THE TEXT is big"
+echo "The output is:$lowerstring"
+# Changes text to uppercase
+declare -u upperstring="camillus IS A man"
+echo "The output is:$upperstring"
+

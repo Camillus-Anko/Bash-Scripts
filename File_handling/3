@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+while input= read LINE
+
+do
+echo $LINE
+
+done < filename.txt
+
